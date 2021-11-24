@@ -1,0 +1,61 @@
+{
+  "displayName": "Ably Listener",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "apiKey",
+      "global": true,
+      "displayName": "Ably API key",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "clientId",
+      "displayName": "User identifier",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "channelName",
+      "displayName": "Name of the socket channel",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "subscriptionKey",
+      "displayName": "Name of the subchannel to subscribe",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "onMessage",
+      "displayName": "Triggered when a message is received",
+      "type": "action",
+      "arguments": [
+        {
+          "type": "text",
+          "displayName": "The first value to received"
+        },
+        {
+          "type": "text",
+          "displayName": "The second value to received"
+        },
+        {
+          "type": "text",
+          "displayName": "The third value to received"
+        },
+        {
+          "type": "text",
+          "displayName": "The fourth value to received"
+        },
+        {
+          "type": "text",
+          "displayName": "The fifth value to received"
+        }
+      ]
+    }
+  ]
+}

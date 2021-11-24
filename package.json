@@ -1,0 +1,38 @@
+{
+  "name": "adalo-ably-sockets",
+  "description": "Ably websocket component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "Steven McKeown",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "Adalo Ably",
+    "components": [
+      {
+        "name": "AdaloSender",
+        "manifest": "./src/components/AdaloSender/manifest.json"
+      },
+      {
+        "name": "AdaloListener",
+        "manifest": "./src/components/AdaloListener/manifest.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.43",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "@ably-labs/react-hooks": "^1.1.4",
+    "ably": "^1.2.14"
+  }
+}

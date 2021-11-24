@@ -1,0 +1,80 @@
+{
+  "displayName": "Ably Sender",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "apiKey",
+      "global": true,
+      "displayName": "Ably API key",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "clientId",
+      "displayName": "Who are you?",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "channelName",
+      "displayName": "Name of the socket channel",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "subscriptionKey",
+      "displayName": "Name of the subchannel to subscribe",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "value1",
+      "displayName": "The first value to send",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "value2",
+      "displayName": "The second value to send",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "value3",
+      "displayName": "The third value to send",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "value4",
+      "displayName": "The fourth value to send",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "value5",
+      "displayName": "The fifth value to send",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "send",
+      "displayName": "Set to 'true' to send the message",
+      "type": "text",
+      "default": "false"
+    },
+    {
+      "name": "onSuccess",
+      "displayName": "Triggered when message successfully sent",
+      "type": "action"
+    },
+    {
+      "name": "onError",
+      "displayName": "Triggered when message fails to send",
+      "type": "action"
+    }
+  ]
+}
